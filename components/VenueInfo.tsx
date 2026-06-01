@@ -5,11 +5,6 @@ const details = [
     body: "Beach Marquee, Holywell Bay, Cornwall, TR8 5PW. Follow championship signage from the car park.",
   },
   {
-    icon: "🕕",
-    heading: "Doors & Timings",
-    body: "Bar opens 17:00. Warm-up acts from 17:30. Main act 18:00–20:00. Hard curfew 20:00 — no exceptions.",
-  },
-  {
     icon: "🚌",
     heading: "Shuttle Bus",
     body: "Free shuttle runs between the HQ campsite and the beach marquee from 17:00, with final return at 20:30.",
@@ -22,12 +17,7 @@ const details = [
   {
     icon: "🍺",
     heading: "Bar",
-    body: "Licensed bar open from 17:00. Card and cash accepted. No glass beyond the marquee perimeter. Proof of age may be required.",
-  },
-  {
-    icon: "♿",
-    heading: "Accessibility",
-    body: "Firm matted floor and level entry. For specific access needs contact the championships office in advance.",
+    body: "Licensed bar serving drinks throughout the evening. Card and cash accepted.",
   },
 ];
 
@@ -37,7 +27,7 @@ export default function VenueInfo() {
       <div className="border-t border-white/10 mb-14" />
 
       <h2 className="text-2xl font-extrabold text-center mb-2">
-        Venue &amp; Practical Info
+        Venue &amp; Getting There
       </h2>
       <p className="text-slate-400 text-center text-sm mb-10">
         Everything you need to find us and plan your evening
@@ -58,19 +48,14 @@ export default function VenueInfo() {
         ))}
       </div>
 
-      {/* Map embed placeholder */}
-      <div className="rounded-2xl overflow-hidden border border-white/10 h-56 bg-white/5 flex items-center justify-center">
-        <a
-          href="https://maps.google.com/?q=Holywell+Bay,+Cornwall,+TR8+5PW"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex flex-col items-center gap-2 text-slate-400 hover:text-cyan-400 transition-colors"
-        >
-          <span className="text-3xl">🗺️</span>
-          <span className="text-sm font-medium">Open in Google Maps</span>
-          <span className="text-xs text-slate-600">Holywell Bay, TR8 5PW</span>
-        </a>
-      </div>
+      <iframe
+        src="https://maps.google.com/maps?q=Holywell+Bay,+Cornwall,+TR8+5PW&t=&z=14&ie=UTF8&iwloc=&output=embed"
+        className="w-full h-64 rounded-2xl border-0"
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        title="Holywell Bay map"
+      />
     </section>
   );
 }
