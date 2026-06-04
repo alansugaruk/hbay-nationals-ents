@@ -17,17 +17,16 @@ type Event = {
 
 const events: Event[] = [
   {
-    slug: "dj-luke",
+    slug: "hbay-djs",
     day: "Sat",
     date: "15 Aug",
     time: "18:00 – 20:00",
-    warmup: "Open Decks 17:30 – 18:00",
-    title: "Headline DJ Night",
-    act: "DJ Luke",
+    title: "H-Bay DJs",
+    act: "H-Bay DJs",
     type: "DJ",
     image:
-      "https://images.unsplash.com/photo-1571266028243-e4733b0f0bb0?w=800&q=80",
-    bio: "Cornwall's go-to DJ for beach events — a high-energy set spanning house, garage, and anthems guaranteed to get the marquee moving.",
+      "https://images.unsplash.com/photo-1660211934853-e33d8a02201d?w=800&q=80",
+    bio: "Our favourite beach DJs get the party started",
   },
   {
     slug: "open-decks",
@@ -35,10 +34,10 @@ const events: Event[] = [
     date: "16 Aug",
     time: "18:00 – 20:00",
     title: "Open Decks",
-    act: "Community DJ Night",
+    act: "Got some tunes?  Come and DJ",
     type: "DJ",
     image:
-      "https://images.unsplash.com/photo-1598387993441-a364f854cca7?w=800&q=80",
+      "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&q=80",
     bio: "The decks are open — come and play. Anyone can step up for a slot on the night. All genres welcome, all abilities encouraged.",
   },
   {
@@ -46,65 +45,61 @@ const events: Event[] = [
     day: "Mon",
     date: "17 Aug",
     time: "18:00 – 20:00",
-    warmup: "Open Decks 17:30 – 18:00",
     title: "Hip Hop Karaoke",
-    act: "Guest Compere",
-    type: "Karaoke",
+    act: "Can you spit some rhymes?  You know you want to",
+    type: "Hip-Hop-Karaoke",
     image:
-      "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80",
-    bio: "Pick your track, grab the mic, and rap it out in front of the marquee. Guest compere keeps the energy high. Classic hip hop anthems from the 90s to now.",
+      "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80",
+    bio: "Pick your track, grab the mic, and rap it out. Big list of Hip-Hop tunes to choose from",
   },
   {
     slug: "shorefire",
     day: "Tue",
     date: "18 Aug",
     time: "18:00 – 20:00",
-    warmup: "Open Decks 17:30 – 18:00",
-    title: "Live Band Night",
-    act: "Shorefire",
+    title: "Shorefire - Live Band",
+    act: "Probably the best surf life saving band in Holywell Bay, maybe the galaxy",
     type: "Live Band",
     image:
-      "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80",
-    bio: "4-piece rock/pop covers band from the South West. Huge crowd-pleasers — think Foo Fighters to Dua Lipa via Kings of Leon.",
+      "/shorefire2.png",
+    bio: "Coolio to Dolly Parton via Michael Jackson and Rage Against The Machine.  This band exists to play beach parties",
   },
   {
-    slug: "rockaoke",
+    slug: "jam",
     day: "Wed",
     date: "19 Aug",
     time: "18:00 – 20:00",
-    warmup: "Acoustic open mic 17:30 – 18:00",
-    title: "Rockaoke & Jam Session",
-    act: "Backed live by Shorefire",
+    title: "Jam Night",
+    act: "with help from house band Shorefire",
     type: "Rockaoke",
     image:
-      "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&q=80",
-    bio: "You sing it, the band plays it. Choose your rock anthem and get up on stage with a live band behind you. Open mic jam session from 17:30.",
+      "https://images.unsplash.com/photo-1546708770-589dab7b22c7?w=800&q=80",
+    bio: "Want to sing a song with a live band?  Want to perform a song with some other musicians?  Sign up and choose a song.  Our house band Shorefire will fill in the gaps, or if you've got a whole band with you then go for it - the stage is yours...",
   },
   {
     slug: "the-strutts",
     day: "Thu",
     date: "20 Aug",
     time: "18:00 – 20:00",
-    warmup: "Open Decks 17:30 – 18:00",
-    title: "Live Band Night 2",
+    title: "The Strutts - Live Band",
     act: "The Strutts",
     type: "Live Band",
     image:
-      "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800&q=80",
-    bio: "High-octane live cover set with a rock edge. The Strutts bring the energy back for the penultimate evening of championships week.",
+      "/thestrutts.jpg",
+    bio: "Cornwall's best pop-disco-rock party band.  So sooo goood",
   },
   {
     slug: "silent-disco",
     day: "Fri",
     date: "21 Aug",
     time: "18:00 – 20:00",
-    warmup: "Headsets from 17:30",
-    title: "Silent Disco Finale",
-    act: "200 headsets · Three channels",
+
+    title: "Silent Disco",
+    act: "Silent Disco",
     type: "Silent Disco",
     image:
-      "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80",
-    bio: "200 wireless headsets, three channels, one beach marquee. The perfect send-off for championships week — dance your way out.",
+      "/silent-disco.jpg",
+    bio: "We all know what Silent Disco is right?  Even more fun with your toes in the sand",
   },
 ];
 
@@ -161,24 +156,22 @@ export default function Events() {
                   </p>
                 )}
 
-                {/* Expand toggle */}
-                <button
-                  onClick={() => toggle(e.slug)}
-                  className="mt-3 flex items-center gap-1 text-xs text-slate-400 hover:text-cyan-400 transition-colors"
-                >
-                  <span>{isOpen ? "Less info" : "More info"}</span>
-                  <span
-                    className={`transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
-                  >
-                    ▾
-                  </span>
-                </button>
-
-                {/* Expanded bio */}
-                {isOpen && (
-                  <p className="mt-3 text-slate-300 text-sm leading-relaxed border-t border-white/10 pt-3">
-                    {e.bio}
-                  </p>
+                {/* Bio with expand */}
+                {e.bio && (
+                  <div className="mt-3 text-slate-300 text-sm leading-relaxed">
+                    <p>
+                      {isOpen ? e.bio : e.bio.slice(0, 80).trimEnd()}
+                      {!isOpen && e.bio.length > 80 && "…"}
+                    </p>
+                    {e.bio.length > 80 && (
+                      <button
+                        onClick={() => toggle(e.slug)}
+                        className="mt-1 text-xs text-slate-400 hover:text-cyan-400 transition-colors"
+                      >
+                        {isOpen ? "Show less" : "Show more…"}
+                      </button>
+                    )}
+                  </div>
                 )}
               </div>
             </div>

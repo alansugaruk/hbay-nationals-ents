@@ -1,17 +1,17 @@
 export default function Hero() {
   return (
-    <section className="relative min-h-[85vh] flex items-end overflow-hidden">
+    <section className="relative min-h-[50vh] sm:min-h-[85vh] flex items-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('https://www.holywellbayslsc.co.uk/wp-content/uploads/2024/11/KAVS-Main_Emblem-sliders_Hbay-1-copy.jpg')",
+            "url('/hbay-evening.png')",
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-[#0a1628]/60 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-[#0a1628]/70 to-[#0a1628]/30" />
 
-      <div className="relative z-10 w-full px-5 pb-12 pt-8 max-w-2xl mx-auto text-center">
-        <p className="text-cyan-400 text-sm font-semibold tracking-widest uppercase mb-3">
+      <div className="relative z-10 w-full px-5 pb-12 pt-8 max-w-2xl mx-auto text-center [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">
+        <p className="text-cyan-400 text-xl font-semibold tracking-widest uppercase mb-3">
           SLSGB Nationals 2026
         </p>
         <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">
@@ -25,7 +25,7 @@ export default function Hero() {
         </p>
         <a
           href="#events"
-          className="inline-block bg-cyan-500 hover:bg-cyan-400 text-[#0a1628] font-bold px-8 py-3 rounded-full text-sm uppercase tracking-wider transition-colors"
+          className="inline-block bg-cyan-500 hover:bg-cyan-400 text-[#0a1628] font-bold px-8 py-3 rounded-full text-sm uppercase tracking-wider transition-colors [text-shadow:none]"
         >
           See What&apos;s On
         </a>

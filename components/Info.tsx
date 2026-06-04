@@ -1,28 +1,16 @@
 const faqs = [
   {
     q: "Where is the Beach Marquee?",
-    a: "The marquee is located directly on the beach at Holywell Bay, Cornwall — follow signs from the championship HQ.",
+    a: "The marquee is located directly on the beach at Holywell Bay, Cornwall next to the surf life saving club hut",
   },
   {
     q: "Do I need a ticket?",
-    a: "All evening entertainment is free to attend for competitors, officials, and supporters. No ticket or wristband required.",
+    a: "Nope. All evening entertainment is free to attend and open to all",
   },
   {
     q: "What time do events start and finish?",
-    a: "Main acts run 18:00–20:00 each evening. Warm-up acts typically start at 17:30. A hard curfew of 20:00 applies on all nights.",
-  },
-  {
-    q: "Is there a bar?",
-    a: "Yes — the Beach Marquee bar opens from 17:00. ID may be required. No glass beyond the marquee perimeter.",
-  },
-  {
-    q: "Can I bring my own headset for the Silent Disco?",
-    a: "No — you must use one of the 200 SSSilent Disco headsets provided. Headset distribution begins at 17:30 on the Friday.",
-  },
-  {
-    q: "Is the venue accessible?",
-    a: "The marquee has a firm matted floor and level entry. Contact the championships office in advance if you need specific access support.",
-  },
+    a: "Main acts run 18:00–20:00 each evening",
+  }
 ];
 
 export default function Info() {
@@ -50,19 +38,6 @@ export default function Info() {
         ))}
       </div>
 
-      {/* Contact callout */}
-      <div className="mt-10 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 p-6 text-center">
-        <p className="text-cyan-300 font-semibold mb-1">Got a question?</p>
-        <p className="text-slate-400 text-sm">
-          Email the entertainment team at{" "}
-          <a
-            href="mailto:ents@hbaynationalsents.co.uk"
-            className="text-cyan-400 underline underline-offset-2"
-          >
-            ents@hbaynationalsents.co.uk
-          </a>
-        </p>
-      </div>
     </section>
   );
 }
