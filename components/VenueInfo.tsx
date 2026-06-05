@@ -19,6 +19,11 @@ const details = [
     heading: "Bar",
     body: "Licensed bar serving drinks throughout the evening. Card and cash accepted.",
   },
+  {
+    icon: "🍔",
+    heading: "Food",
+    body: "Café and BBQ serving food throughout the evening. Card and cash accepted.",
+  },
 ];
 
 export default function VenueInfo() {
