@@ -85,7 +85,7 @@ export default function Volunteers() {
       <p className="text-slate-400 text-center text-sm mb-4">
         Evening Production Crew · 15–21 August 2026
       </p>
-      <p className="text-slate-300 text-center text-sm leading-relaxed mb-10 max-w-lg mx-auto">
+      <p className="text-slate-300 text-center text-base leading-relaxed mb-10 max-w-lg mx-auto">
         We&apos;re recruiting from the club&apos;s non-marshalling volunteer pool — if
         your daytime duties wrap up before 16:00, one of these roles could be
         yours. No experience required, just enthusiasm.
@@ -125,7 +125,7 @@ export default function Volunteers() {
                   {r.title}
                 </h3>
 
-                <div className="mt-3 text-slate-300 text-sm leading-relaxed">
+                <div className="mt-3 text-slate-300 text-base leading-relaxed">
                   <p>
                     {isOpen
                       ? r.description
