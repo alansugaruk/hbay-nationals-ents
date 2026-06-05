@@ -1,6 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import OpenDecksFormModal from "./OpenDecksFormModal";
+import JamNightFormModal from "./JamNightFormModal";
+import HipHopKaraokeFormModal from "./HipHopKaraokeFormModal";
 
 type Event = {
   slug: string;
@@ -105,6 +108,9 @@ const events: Event[] = [
 
 export default function Events() {
   const [open, setOpen] = useState<string | null>(null);
+  const [djModalOpen, setDjModalOpen] = useState(false);
+  const [jamModalOpen, setJamModalOpen] = useState(false);
+  const [hhkModalOpen, setHhkModalOpen] = useState(false);
 
   const toggle = (slug: string) =>
     setOpen((prev) => (prev === slug ? null : slug));
@@ -113,7 +119,7 @@ export default function Events() {
     <section id="events" className="px-4 py-14 max-w-2xl mx-auto w-full">
       <h2 className="text-2xl font-extrabold text-center mb-2">What&apos;s On</h2>
       <p className="text-slate-400 text-center text-sm mb-10">
-        Beach Marquee · All events 18:00 – 20:00 · Hard curfew 20:00
+        Beach Marquee · All events 18:00 – 20:00
       </p>
 
       <div className="flex flex-col gap-5">
@@ -173,11 +179,41 @@ export default function Events() {
                     )}
                   </div>
                 )}
+
+                {/* Register interest buttons */}
+                {e.slug === "open-decks" && (
+                  <button
+                    onClick={() => setDjModalOpen(true)}
+                    className="mt-4 w-full rounded-xl border border-cyan-400 text-cyan-400 font-semibold text-sm py-2 hover:bg-cyan-400 hover:text-[#0a1628] transition-colors"
+                  >
+                    Register your interest
+                  </button>
+                )}
+                {e.slug === "jam" && (
+                  <button
+                    onClick={() => setJamModalOpen(true)}
+                    className="mt-4 w-full rounded-xl border border-cyan-400 text-cyan-400 font-semibold text-sm py-2 hover:bg-cyan-400 hover:text-[#0a1628] transition-colors"
+                  >
+                    Register your interest
+                  </button>
+                )}
+                {e.slug === "hip-hop-karaoke" && (
+                  <button
+                    onClick={() => setHhkModalOpen(true)}
+                    className="mt-4 w-full rounded-xl border border-cyan-400 text-cyan-400 font-semibold text-sm py-2 hover:bg-cyan-400 hover:text-[#0a1628] transition-colors"
+                  >
+                    Register your interest
+                  </button>
+                )}
               </div>
             </div>
           );
         })}
       </div>
+
+      <OpenDecksFormModal isOpen={djModalOpen} onClose={() => setDjModalOpen(false)} />
+      <JamNightFormModal isOpen={jamModalOpen} onClose={() => setJamModalOpen(false)} />
+      <HipHopKaraokeFormModal isOpen={hhkModalOpen} onClose={() => setHhkModalOpen(false)} />
     </section>
   );
 }

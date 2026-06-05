@@ -7,12 +7,12 @@ const details = [
   {
     icon: "🚌",
     heading: "Shuttle Bus",
-    body: "Free shuttle runs between the HQ campsite and the beach marquee from 17:00, with final return at 20:30.",
+    body: "Free shuttle runs between Trevornick Campsite and the beach marquee from 17:00, with final return at 20:30.",
   },
   {
     icon: "🅿️",
     heading: "Parking",
-    body: "Holywell Bay car park is a short walk from the marquee. Overflow parking at the farm field — follow marshals.",
+    body: "Trevornick Campsite is a short walk from the marquee.",
   },
   {
     icon: "🍺",

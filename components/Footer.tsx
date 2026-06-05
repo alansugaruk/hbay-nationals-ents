@@ -6,7 +6,7 @@ export default function Footer() {
       </p>
       <p>Beach Marquee · Holywell Bay · Cornwall</p>
       <p className="mt-3">
-        All events subject to change. Hard curfew 20:00 on all nights.
+        All events subject to change.
       </p>
     </footer>
   );

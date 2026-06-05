@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import VolunteerFormModal from "./VolunteerFormModal";
 
 type Role = {
   slug: string;
@@ -72,6 +73,8 @@ const roles: Role[] = [
 
 export default function Volunteers() {
   const [open, setOpen] = useState<string | null>(null);
+  const [activeRole, setActiveRole] = useState<Role | null>(null);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const toggle = (slug: string) =>
     setOpen((prev) => (prev === slug ? null : slug));
@@ -139,17 +142,25 @@ export default function Volunteers() {
                   )}
                 </div>
 
-                <a
-                  href="mailto:ents@hbaynationals.co.uk?subject=Volunteer%20–%20ROLE"
-                  className="mt-4 inline-block text-xs font-semibold text-cyan-400 border border-cyan-400/40 hover:border-cyan-400 hover:bg-cyan-400/10 px-4 py-1.5 rounded-full transition-colors"
+                <button
+                  onClick={() => { setActiveRole(r); setModalOpen(true); }}
+                  className="mt-4 w-full rounded-xl border border-cyan-400 text-cyan-400 font-semibold text-sm py-2 hover:bg-cyan-400 hover:text-[#0a1628] transition-colors"
                 >
-                  Express interest →
-                </a>
+                  Express interest
+                </button>
               </div>
             </div>
           );
         })}
       </div>
+
+      {activeRole && (
+        <VolunteerFormModal
+          isOpen={modalOpen}
+          onClose={() => setModalOpen(false)}
+          role={activeRole}
+        />
+      )}
     </section>
   );
 }
