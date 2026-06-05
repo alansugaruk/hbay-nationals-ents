@@ -32,8 +32,8 @@ export default function Info() {
             key={q}
             className="bg-white/5 rounded-2xl p-5 border border-white/10"
           >
-            <p className="font-semibold text-sm text-cyan-400 mb-1">{q}</p>
-            <p className="text-slate-300 text-sm leading-relaxed">{a}</p>
+            <p className="font-semibold text-base text-cyan-400 mb-1">{q}</p>
+            <p className="text-slate-300 text-base leading-relaxed">{a}</p>
           </div>
         ))}
       </div>

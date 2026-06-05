@@ -41,8 +41,8 @@ export default function VenueInfo() {
           >
             <span className="text-2xl flex-shrink-0 mt-0.5">{icon}</span>
             <div>
-              <p className="font-semibold text-sm mb-1">{heading}</p>
-              <p className="text-slate-400 text-sm leading-relaxed">{body}</p>
+              <p className="font-semibold text-base mb-1">{heading}</p>
+              <p className="text-slate-400 text-base leading-relaxed">{body}</p>
             </div>
           </div>
         ))}

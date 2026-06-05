@@ -155,7 +155,7 @@ export default function Events() {
                 <h3 className="font-extrabold text-base leading-snug">
                   {e.title}
                 </h3>
-                <p className="text-cyan-400 text-sm mt-0.5">{e.act}</p>
+                <p className="text-cyan-400 text-base mt-0.5">{e.act}</p>
                 {e.warmup && (
                   <p className="text-slate-600 text-xs mt-1 italic">
                     {e.warmup}
@@ -164,7 +164,7 @@ export default function Events() {
 
                 {/* Bio with expand */}
                 {e.bio && (
-                  <div className="mt-3 text-slate-300 text-sm leading-relaxed">
+                  <div className="mt-3 text-slate-300 text-base leading-relaxed">
                     <p>
                       {isOpen ? e.bio : e.bio.slice(0, 80).trimEnd()}
                       {!isOpen && e.bio.length > 80 && "…"}
