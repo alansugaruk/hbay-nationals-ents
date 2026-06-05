@@ -20,8 +20,11 @@ export default function Hero() {
         <p className="text-slate-300 text-base sm:text-lg mb-2">
           Beach Marquee · Holywell Bay
         </p>
+        <p className="text-slate-400 text-sm mb-1">
+          15–21 August 2026
+        </p>
         <p className="text-slate-400 text-sm mb-8">
-          Every evening 18:00 – 20:00 · 15–21 August 2026
+          Warm-up from 16:00 · Main acts 18:00 – 20:00
         </p>
         <div className="flex flex-wrap justify-center gap-3">
           <a
