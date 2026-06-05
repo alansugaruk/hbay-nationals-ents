@@ -119,7 +119,7 @@ export default function Events() {
     <section id="events" className="px-4 py-14 max-w-2xl mx-auto w-full">
       <h2 className="text-2xl font-extrabold text-center mb-2">What&apos;s On</h2>
       <p className="text-slate-400 text-center text-sm mb-10">
-        Beach Marquee · All events 18:00 – 20:00 · Hard curfew 20:00
+        Beach Marquee · All events 18:00 – 20:00
       </p>
 
       <div className="flex flex-col gap-5">

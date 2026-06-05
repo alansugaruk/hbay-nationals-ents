@@ -15,7 +15,7 @@ export default function Hero() {
           SLSGB Nationals 2026
         </p>
         <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">
-          H-Bay Ents
+          H-Bay Rocks
         </h1>
         <p className="text-slate-300 text-base sm:text-lg mb-2">
           Beach Marquee · Holywell Bay
