@@ -23,12 +23,20 @@ export default function Hero() {
         <p className="text-slate-400 text-sm mb-8">
           Every evening 18:00 – 20:00 · 15–21 August 2026
         </p>
-        <a
-          href="#events"
-          className="inline-block bg-cyan-500 hover:bg-cyan-400 text-[#0a1628] font-bold px-8 py-3 rounded-full text-sm uppercase tracking-wider transition-colors [text-shadow:none]"
-        >
-          See What&apos;s On
-        </a>
+        <div className="flex flex-wrap justify-center gap-3">
+          <a
+            href="#events"
+            className="inline-block bg-cyan-500 hover:bg-cyan-400 text-[#0a1628] font-bold px-8 py-3 rounded-full text-sm uppercase tracking-wider transition-colors [text-shadow:none]"
+          >
+            See What&apos;s On
+          </a>
+          <a
+            href="#volunteers"
+            className="inline-block border border-cyan-500 hover:bg-cyan-500/20 text-cyan-400 font-bold px-8 py-3 rounded-full text-sm uppercase tracking-wider transition-colors [text-shadow:none]"
+          >
+            Volunteer
+          </a>
+        </div>
       </div>
     </section>
   );
