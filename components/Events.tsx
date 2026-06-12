@@ -16,6 +16,8 @@ type Event = {
   type: string;
   image: string;
   bio: string;
+  featured?: boolean;
+  bandcamp?: string;
 };
 
 const events: Event[] = [
@@ -54,6 +56,19 @@ const events: Event[] = [
     image:
       "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80",
     bio: "Pick your track, grab the mic, and rap it out. Big list of Hip-Hop tunes to choose from",
+  },
+  {
+    slug: "emily-howard",
+    day: "Tue",
+    date: "18 Aug",
+    time: "17:00 – 18:00",
+    title: "Emily Howard",
+    act: "Singer Songwriter",
+    type: "Emily Howard",
+    image: "/emily-howard.png",
+    featured: true,
+    bandcamp: "https://emilyhoward.bandcamp.com/album/good-grief",
+    bio: "Emily Howard is an award-winning singer-songwriter from Exeter in the South West. Featured on BBC Introducing and nominated for Album of the Year at the South West Music Awards, her acoustic soul-folk songs draw comparisons to Ani DiFranco and Joni Mitchell — strong meanings sung openly and honestly.",
   },
   {
     slug: "shorefire",
@@ -128,7 +143,11 @@ export default function Events() {
           return (
             <div
               key={e.slug}
-              className="rounded-2xl overflow-hidden border border-white/10 bg-white/5"
+              className={`rounded-2xl overflow-hidden bg-white/5 ${
+                e.featured
+                  ? "border border-cyan-400/40 ring-1 ring-cyan-400/20"
+                  : "border border-white/10"
+              }`}
             >
               {/* Photo strip */}
               <div className="relative h-44 overflow-hidden">
@@ -136,7 +155,9 @@ export default function Events() {
                 <img
                   src={e.image}
                   alt={e.title}
-                  className="w-full h-full object-cover"
+                  className={`w-full h-full object-cover ${
+                    e.featured ? "object-[center_32%]" : ""
+                  }`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628]/80 to-transparent" />
                 <span className="absolute bottom-3 left-4 text-xs font-semibold uppercase tracking-wider text-cyan-400 bg-[#0a1628]/60 px-2 py-0.5 rounded-full">
@@ -178,6 +199,18 @@ export default function Events() {
                       </button>
                     )}
                   </div>
+                )}
+
+                {/* Bandcamp link */}
+                {e.bandcamp && (
+                  <a
+                    href={e.bandcamp}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 block w-full rounded-xl bg-cyan-400 text-[#0a1628] font-semibold text-sm py-2 text-center hover:bg-cyan-300 transition-colors"
+                  >
+                    🎵 Listen on Bandcamp
+                  </a>
                 )}
 
                 {/* Register interest buttons */}
