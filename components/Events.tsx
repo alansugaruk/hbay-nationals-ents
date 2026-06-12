@@ -209,9 +209,9 @@ export default function Events() {
                     href={e.bandcamp}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 block w-full rounded-xl bg-cyan-400 text-[#0a1628] font-semibold text-sm py-2 text-center hover:bg-cyan-300 transition-colors"
+                    className="mt-4 block w-full rounded-xl border border-cyan-400 text-cyan-400 font-semibold text-sm py-2 text-center hover:bg-cyan-400 hover:text-[#0a1628] transition-colors"
                   >
-                    🎵 Listen on Bandcamp
+                    Listen
                   </a>
                 )}
 
