@@ -16,6 +16,7 @@ type Event = {
   type: string;
   image: string;
   bio: string;
+  link?: string;
 };
 
 const events: Event[] = [
@@ -90,6 +91,7 @@ const events: Event[] = [
     image:
       "/thestrutts.jpg",
     bio: "Cornwall's best pop-disco-rock party band.  So sooo goood",
+    link: "https://www.thestruttsband.co.uk/",
   },
   {
     slug: "silent-disco",
@@ -178,6 +180,18 @@ export default function Events() {
                       </button>
                     )}
                   </div>
+                )}
+
+                {/* Band website link */}
+                {e.link && (
+                  <a
+                    href={e.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 block w-full rounded-xl border border-cyan-400 text-cyan-400 font-semibold text-sm py-2 text-center hover:bg-cyan-400 hover:text-[#0a1628] transition-colors"
+                  >
+                    Visit website ↗
+                  </a>
                 )}
 
                 {/* Register interest buttons */}
