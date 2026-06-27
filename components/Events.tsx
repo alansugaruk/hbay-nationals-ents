@@ -96,6 +96,17 @@ const events: Event[] = [
     bio: "Want to sing a song with a live band?  Want to perform a song with some other musicians?  Sign up and choose a song.  Our house band Shorefire will fill in the gaps, or if you've got a whole band with you then go for it - the stage is yours...",
   },
   {
+    slug: "elle-and-luke",
+    day: "Thu",
+    date: "20 Aug",
+    time: "17:00 – 18:00",
+    title: "Elle & Luke Spurrell",
+    act: "Acoustic Duo",
+    type: "Acoustic",
+    image: "/elle-and-luke.jpeg",
+    bio: "Acoustic duo, Elle and Luke Spurrell, have been musically intertwined for almost 20 years. Known for their soulful harmonies and laid back vibe, playing a mixture of well known covers with some original material thrown in too. This husband and wife team are the founders of the ever growing 'North Coast Choir' and can be seen fronting a Fleetwood Mac tribute band, as well as their own separate cover bands. They can be seen performing at various venues up and down country.",
+  },
+  {
     slug: "the-strutts",
     day: "Thu",
     date: "20 Aug",
