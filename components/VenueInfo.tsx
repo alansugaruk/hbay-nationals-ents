@@ -22,7 +22,7 @@ const details = [
   {
     icon: "🍔",
     heading: "Food",
-    body: "Café and BBQ serving food throughout the evening. Card and cash accepted.",
+    body: "Café and BBQ serving food until 5pm, with pizzas running until 8pm. Card and cash accepted.",
   },
 ];
 
