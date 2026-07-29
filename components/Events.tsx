@@ -45,7 +45,7 @@ const events: Event[] = [
     image: "/emily-howard.png",
     featured: true,
     bandcamp: "https://emilyhoward.bandcamp.com/album/good-grief",
-    bio: "Emily Howard is an award-winning singer-songwriter from Exeter in the South West. Featured on BBC Introducing and nominated for Album of the Year at the South West Music Awards, her acoustic soul-folk songs draw comparisons to Ani DiFranco and Joni Mitchell — strong meanings sung openly and honestly.",
+    bio: "Emily Howard is a singer-songwriter based in Newquay whose lively, upbeat acoustic covers and heartfelt storytelling blend exquisitely with soulful melodies and an authentic, emotive voice. Drawing inspiration from life's experiences, relationships, and the beauty of everyday moments, she creates songs that resonate with honesty and warmth. Emily's sound is both contemporary and timeless. Her performances are known for their intimacy and genuine connection, inviting audiences into the stories behind each song. She has shared stages supporting Josienne Clarke and Ben Walker, Hannah Martin and Phillip Henry, Jim Causley, Phil Beer, 3 Daft Monkeys, Sheelanagig, Mad Dog McCrea and Boo Hewerdine, and loves travelling to festivals — she was delighted to play at Glastonbury Festival 2025. She has also been featured on BBC Introducing. Passionate about writing music that inspires, comforts, and uplifts, Emily continues to develop her craft while sharing original songs that reflect her unique perspective. Whether performing on stage, in intimate venues, or in the studio, she brings sincerity, passion, and a distinctive artistic voice to every performance.",
   },
   {
     slug: "open-decks",
