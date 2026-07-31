@@ -33,12 +33,6 @@ export default function Hero() {
           >
             See What&apos;s On
           </a>
-          <a
-            href="#volunteers"
-            className="inline-block border border-cyan-500 hover:bg-cyan-500/20 text-cyan-400 font-bold px-8 py-3 rounded-full text-sm uppercase tracking-wider transition-colors [text-shadow:none]"
-          >
-            Volunteer
-          </a>
         </div>
       </div>
     </section>
