@@ -10,7 +10,7 @@ type Event = {
   day: string;
   date: string;
   time: string;
-  warmup?: string;
+  note?: string;
   title: string;
   act: string;
   type: string;
@@ -26,7 +26,7 @@ const events: Event[] = [
     slug: "hbay-djs",
     day: "Sat",
     date: "15 Aug",
-    time: "18:00 – 20:00",
+    time: "17:00 – 20:00",
     title: "H-Bay DJs",
     act: "H-Bay DJs",
     type: "DJ",
@@ -38,7 +38,7 @@ const events: Event[] = [
     slug: "emily-howard",
     day: "Sun",
     date: "16 Aug",
-    time: "17:00 – 18:00",
+    time: "16:00 – 17:00",
     title: "Emily Howard",
     act: "Singer Songwriter",
     type: "Emily Howard",
@@ -51,7 +51,7 @@ const events: Event[] = [
     slug: "open-decks",
     day: "Sun",
     date: "16 Aug",
-    time: "18:00 – 20:00",
+    time: "17:00 – 20:00",
     title: "Open Decks",
     act: "Got some tunes?  Come and DJ",
     type: "DJ",
@@ -72,16 +72,16 @@ const events: Event[] = [
     bio: "Pick your track, grab the mic, and rap it out. Big list of Hip-Hop tunes to choose from",
   },
   {
-    slug: "the-steelers-tue",
+    slug: "open-decks-tue",
     day: "Tue",
     date: "18 Aug",
-    time: "17:00 – 18:00",
-    title: "The Steelers",
-    act: "Treviglas Academy Steel Band",
-    type: "Steel Band",
-    image: "/steelers.jpg",
-    warmup: "Warming things up before Shorefire",
-    bio: "Newquay's legendary steel band from Treviglas Academy, led by Steve Mildenhall for over 20 years. Their sunshine steel-pan sound rolls from Harry Belafonte to Bruno Mars — with a rendition of Taylor Swift's \"Shake It Off\" that gets everyone singing. Festival regulars at Camp Bestival, Tropical Pressure and Truro City of Lights, they'll have the beach warmed up in no time.",
+    time: "16:00 – 18:00",
+    title: "Open Decks",
+    act: "Got some tunes?  Come and DJ",
+    type: "DJ",
+    image:
+      "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&q=80",
+    bio: "The decks are open — come and play. Anyone can step up for a slot on the night. All genres welcome, all abilities encouraged.",
   },
   {
     slug: "shorefire",
@@ -96,22 +96,10 @@ const events: Event[] = [
     bio: "Coolio to Dolly Parton via Michael Jackson and Rage Against The Machine.  This band exists to play beach parties",
   },
   {
-    slug: "the-steelers-wed",
-    day: "Wed",
-    date: "19 Aug",
-    time: "17:00 – 18:00",
-    title: "The Steelers",
-    act: "Treviglas Academy Steel Band",
-    type: "Steel Band",
-    image: "/steelers.jpg",
-    warmup: "Getting everyone warmed up before the Jam Night",
-    bio: "Newquay's legendary steel band from Treviglas Academy, led by Steve Mildenhall for over 20 years. Their sunshine steel-pan sound rolls from Harry Belafonte to Bruno Mars — with a rendition of Taylor Swift's \"Shake It Off\" that gets everyone singing. Festival regulars at Camp Bestival, Tropical Pressure and Truro City of Lights, they'll have the beach warmed up in no time.",
-  },
-  {
     slug: "jam",
     day: "Wed",
     date: "19 Aug",
-    time: "18:00 – 20:00",
+    time: "16:00 – 19:00",
     title: "Jam Night",
     act: "with help from house band Shorefire",
     type: "Rockaoke",
@@ -120,10 +108,22 @@ const events: Event[] = [
     bio: "Want to sing a song with a live band?  Want to perform a song with some other musicians?  Sign up and choose a song.  Our house band Shorefire will fill in the gaps, or if you've got a whole band with you then go for it - the stage is yours...",
   },
   {
+    slug: "the-steelers-wed",
+    day: "Wed",
+    date: "19 Aug",
+    time: "19:00 – 20:00",
+    title: "The Steelers",
+    act: "Treviglas Academy Steel Band",
+    type: "Steel Band",
+    image: "/steelers.jpg",
+    note: "Closing out the night after Jam Night",
+    bio: "Newquay's legendary steel band from Treviglas Academy, led by Steve Mildenhall for over 20 years. Their sunshine steel-pan sound rolls from Harry Belafonte to Bruno Mars — with a rendition of Taylor Swift's \"Shake It Off\" that gets everyone singing. Festival regulars at Camp Bestival, Tropical Pressure and Truro City of Lights, they'll have the beach warmed up in no time.",
+  },
+  {
     slug: "elle-and-luke",
     day: "Thu",
     date: "20 Aug",
-    time: "17:00 – 18:00",
+    time: "16:00 – 17:00",
     title: "Elle & Luke Spurrell",
     act: "Acoustic Duo",
     type: "Acoustic",
@@ -171,7 +171,7 @@ export default function Events() {
     <section id="events" className="px-4 py-14 max-w-2xl mx-auto w-full">
       <h2 className="text-2xl font-extrabold text-center mb-2">What&apos;s On</h2>
       <p className="text-slate-400 text-center text-sm mb-10">
-        Warm-up from 16:00 · Main acts 18:00 – 20:00
+        Music from 4pm to 8pm
       </p>
 
       <div className="flex flex-col gap-5">
@@ -214,9 +214,9 @@ export default function Events() {
                   {e.title}
                 </h3>
                 <p className="text-cyan-400 text-base mt-0.5">{e.act}</p>
-                {e.warmup && (
+                {e.note && (
                   <p className="text-slate-600 text-xs mt-1 italic">
-                    {e.warmup}
+                    {e.note}
                   </p>
                 )}
 
@@ -263,7 +263,7 @@ export default function Events() {
                 )}
 
                 {/* Register interest buttons */}
-                {e.slug === "open-decks" && (
+                {(e.slug === "open-decks" || e.slug === "open-decks-tue") && (
                   <button
                     onClick={() => setDjModalOpen(true)}
                     className="mt-4 w-full rounded-xl border border-cyan-400 text-cyan-400 font-semibold text-sm py-2 hover:bg-cyan-400 hover:text-[#0a1628] transition-colors"

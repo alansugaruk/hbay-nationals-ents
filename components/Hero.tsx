@@ -24,7 +24,7 @@ export default function Hero() {
           15–21 August 2026
         </p>
         <p className="text-slate-400 text-sm mb-8">
-          Warm-up from 16:00 · Main acts 18:00 – 20:00
+          Music from 4pm to 8pm
         </p>
         <div className="flex flex-wrap justify-center gap-3">
           <a

@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "What time do events start and finish?",
-    a: "There's warm-up music on the beach from around 16:00 to keep things going as the day's sport finishes, with the main acts on stage 18:00–20:00 each evening",
+    a: "Music runs on the beach from 4pm to 8pm each evening",
   },
   {
     q: "Will there be food and drink?",
