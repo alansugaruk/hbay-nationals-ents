@@ -17,13 +17,41 @@ export type Block =
   | { kind: "table"; head: Cell[]; body: Cell[][] }
   | { kind: "rule" };
 
+const TERMINAL_PUNCTUATION = /[.!?:;]["'’)\]]?$/;
+
+function plain(line: Line): string {
+  return line.map((run) => run.text).join("");
+}
+
+/** True if a line begins with a lowercase letter, as a wrapped sentence would. */
+function startsLowercase(line: Line): boolean {
+  const first = plain(line).trimStart().charAt(0);
+  return first !== "" && first === first.toLowerCase() && first !== first.toUpperCase();
+}
+
 /**
- * Flattens a markdown-it `inline` token into lines of styled runs. Soft and hard
- * breaks start a new line, which is what makes the multi-line "Volunteers / MC /
- * Sound Tech" paragraphs render the way they are written.
+ * Decides whether a single newline in the source was a deliberate line break or
+ * just a hard-wrapped sentence.
+ *
+ * Both shapes appear in the schedule: "Volunteers / MC / Sound Tech" blocks want a
+ * break per line, while a long note wrapped at the edge of the file must flow as one
+ * sentence. A wrapped sentence is the case where the previous line stops without
+ * closing punctuation and the next one picks up in lowercase.
+ */
+function continuesSentence(previous: Line, next: Line): boolean {
+  const before = plain(previous).trimEnd();
+  if (before === "" || TERMINAL_PUNCTUATION.test(before)) return false;
+  return startsLowercase(next);
+}
+
+/**
+ * Flattens a markdown-it `inline` token into lines of styled runs. Hard breaks always
+ * split; single newlines split unless they are mid-sentence (see continuesSentence).
  */
 function inlineToLines(token: Token | undefined): Line[] {
   const lines: Line[] = [[]];
+  /** Whether the break that started each line was a soft one; index 0 is unused. */
+  const soft: boolean[] = [false];
   let bold = 0;
   let italic = 0;
 
@@ -56,6 +84,7 @@ function inlineToLines(token: Token | undefined): Line[] {
         case "softbreak":
         case "hardbreak":
           lines.push([]);
+          soft.push(child.type === "softbreak");
           break;
         case "text":
         case "code_inline":
@@ -74,7 +103,20 @@ function inlineToLines(token: Token | undefined): Line[] {
   };
 
   if (token?.children) walk(token.children);
-  return lines.filter((line, index) => index === 0 || line.length > 0);
+
+  const joined: Line[] = [];
+  lines.forEach((line, index) => {
+    const previous = joined[joined.length - 1];
+    if (index > 0 && line.length === 0) return;
+    if (previous && soft[index] && continuesSentence(previous, line)) {
+      previous[previous.length - 1].text += " ";
+      previous.push(...line);
+      return;
+    }
+    joined.push(line);
+  });
+
+  return joined;
 }
 
 function alignOf(token: Token): Align {

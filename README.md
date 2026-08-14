@@ -35,7 +35,13 @@ Notes for editing the markdown:
 - `##` headings start a new day. Each day is kept on a single page where it fits.
 - Tables may have any number of columns; column widths are measured from the content,
   and a table longer than a page repeats its header row on the next one.
-- `**bold**` and `*italics*` work in paragraphs and in table cells.
+- `**bold**` and `*italics*` work in paragraphs and in table cells. Note that the
+  closing `**` must not be preceded by a space — `**Name **` is not bold in markdown
+  and prints its asterisks literally.
+- A single newline inside a paragraph keeps the line break, so "Volunteers / MC /
+  Sound Tech" blocks read as written. The exception is a hard-wrapped sentence — where
+  a line stops without closing punctuation and the next starts lowercase — which is
+  joined back into one flowing line. End a line with two spaces to force a break.
 - `---` between days is optional — the day heading is its own separator, so a rule
   immediately before a heading is not drawn.
 - Text is set in Helvetica, so characters outside its WinAnsi range (emoji, for

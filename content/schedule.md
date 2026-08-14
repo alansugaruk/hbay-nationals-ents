@@ -6,7 +6,7 @@ Music from 4pm till 8pm+ daily.
 
 ## Friday 14 August - Setup
 
-**Volunteers:** Alan, Jenny
+**Volunteers:** Alan, Jenny, more welcome
 
 | Time  | Activity                                     |
 | :---- | :------------------------------------------- |
@@ -20,7 +20,7 @@ Music from 4pm till 8pm+ daily.
 
 ## Saturday 15 August - H-Bay DJs
 
-**Volunteers:** Alan, Jenny, Christian
+**Volunteers:** Alan, Jenny, Christian, Tom
 
 | Time  | Performer                      | Style                       |
 | :---- | :----------------------------- | :-------------------------- |
@@ -37,17 +37,19 @@ Music from 4pm till 8pm+ daily.
 MC: Jenny
 Open Decks runs 20-minute sets. Sign-ups welcome on the day.
 
-| Time  | Performer        | Club            | Style                                    |
-| :---- | :--------------- | :-------------- | :--------------------------------------- |
-| 15:30 | Sound check      | N/A             | N/A                                      |
-| 16:00 | **Emily Howard** | Holywell        | Acoustic singer-songwriter               |
-| 17:00 | **Julie M**      | North Norfolk   | Bangers, dance, RnB                      |
-| 17:30 | **Stranger**     | None?           | House, garage, grime                     |
-| 18:00 | **DJ Trav**      | Branksome Chine | House                                    |
-| 18:30 | **DJ Blazer**    | None?           | UKG, old school garage, DNB              |
-| 19:00 | **DJ Noah**      | Rhoose          | Drum & bass, jungle                      |
-| 19:30 | **DJ Demonise**  | None?           | House, garage, jungle, liquid DNB, grime |
-| 20:00 | Finish           |                 |                                          |
+| Time  | Performer             | Club            | Style                                    |
+| :---- | :-------------------- | :-------------- | :--------------------------------------- |
+| 15:30 | Sound check           | N/A             | N/A                                      |
+| 16:00 | **Emily Howard**      | Holywell        | Acoustic singer-songwriter               |
+| 17:00 | **Julie M**           | North Norfolk   | Bangers, dance, RnB                      |
+| 17:30 | **James** (Stranger)  | None?           | House, garage, grime                     |
+| 18:00 | **Travis** (DJ Trav)  | Branksome Chine | House                                    |
+| 18:30 | **Ben** (Dj blazer)   | None?           | UKG, old school garage, DNB              |
+| 19:00 | **Noah B** *(age 13)* | Rhoose          | Drum & bass, jungle                      |
+| 19:30 | **Taz** (DJ Demonise) | None?           | House, garage, jungle, liquid DNB, grime |
+| 20:00 | Finish                |                 |                                          |
+
+Background music covers Alan's board relay, which falls between 17:00 and 19:00. The running order shifts later accordingly.
 
 ---
 
@@ -82,8 +84,8 @@ A second Open Decks session, with room for sign-ups on the day.
 | 14:00 | Shorefire backline transport across beach | H-Bay |                            |
 | 15:00 | Shorefire setup and sound checks          | H-Bay |                            |
 | 16:00 | **Open decks** - sign-ups on the day      | -     | -                          |
-| 16:00 | **El Whippito**                           | H-Bay | Latin, cumbia, salsa, funk |
-| 17:00 | **DJ Sea C**                              | H-Bay | Dance, party classics      |
+| 16:00 | **Whip** (El Whippito)                    | H-Bay | Latin, cumbia, salsa, funk |
+| 17:00 | **Claire** (DJ Sea C)                     | H-Bay | Dance, party classics      |
 | 17:20 | **Open decks** - sign-ups on the day      | -     | -                          |
 | 18:00 | **Shorefire**                             | -     | Live band, covers          |
 | 20:00 | Finish                                    |       |                            |
@@ -97,20 +99,24 @@ A second Open Decks session, with room for sign-ups on the day.
 Live rockaoke with Shorefire as house band.
 **Walk-ups are welcome throughout**: choose from a list of songs available to join in on.
 
-| Time  | Performer                                      | Songs                                               |
-| :---- | :--------------------------------------------- | :-------------------------------------------------- |
-| 14:00 | Steelers equipment collection at Treviglas     |                                                     |
-| 15:00 | Steelers equipment transport across beach      |                                                     |
-| 16:00 | *Walk-up sign-up sheet opens by the stage*     |                                                     |
-| 16:00 | Warm-up music                                  |                                                     |
-| 17:00 | **Laura & Huw** - vocals, acoustic guitar      | Black Horse & the Cherry Tree, Dreams (Cranberries) |
-| 17:20 | **Aurelia** - vocals                           | Riptide (Vance Joy)                                 |
-| 17:40 | Carl, Laura, Huw                               | When I Come Around, Mr Jones                        |
-| 18:00 | **Open floor** - walk-ups, backed by Shorefire |                                                     |
-| 18:00 | **Award ceremony** - separate stage            |                                                     |
-| 18:00 | *Steel band set up on the stage*               |                                                     |
-| 19:00 | **The Steelers**                               |                                                     |
-| 20:00 | Finish                                         |                                                     |
+| Time  | Performer                                  | Songs                                               |
+| :---- | :----------------------------------------- | :-------------------------------------------------- |
+| 14:00 | Steelers equipment collection at Treviglas |                                                     |
+| 15:00 | Steelers equipment transport across beach  |                                                     |
+| 16:00 | *Walk-up sign-up sheet opens by the stage* |                                                     |
+| 16:00 | Jam Session Open - Walk Ups Welcome        |                                                     |
+| 17:00 | **Laura & Huw** - vocals, acoustic guitar  | Black Horse & the Cherry Tree, Dreams (Cranberries) |
+| 17:20 | **Aurelia** - vocals                       | Riptide (Vance Joy)                                 |
+| 17:40 | Carl, Laura, Huw                           | When I Come Around, Mr Jones                        |
+| 18:00 | LEAN                                       | Indie band                                          |
+| 18:20 | **Award ceremony** - separate stage        |                                                     |
+| 18:20 | *Steel band set up on the marquee stage*   |                                                     |
+| 19:00 | **The Steelers**                           |                                                     |
+| 20:00 | Finish                                     |                                                     |
+
+Walk-ups can also be slotted between the confirmed performers if people come forward early.
+Shorefire to receive the confirmed song list with keys in advance, plus a handful of house
+standards to fall back on.
 
 ---
 
@@ -118,15 +124,15 @@ Live rockaoke with Shorefire as house band.
 
 **On shift:** Alan, Jenny, Sara, Isla, Sophie, Nina, Alice. **Sound:** Alan
 
-| Time  | Performer                                 | Style                     |
-| :---- | :---------------------------------------- | :------------------------ |
-| 14:00 | Steelers equipment transport across beach |                           |
-| 15:00 | Steelers equipment return to Treviglas    |                           |
-| 16:00 | **Elle & Luke Spurrell**                  | Acoustic duo              |
-| 17:00 | **LEAN**                                  | Indie, guitar-led         |
-| 18:00 | **The Strutts**                           | Pop-disco-rock party band |
-| 20:00 | Finish                                    |                           |
-| 20:45 | Pack down PA                              |                           |
+| Time  | Performer                                 | Style                       |
+| :---- | :---------------------------------------- | :-------------------------- |
+| 14:00 | Steelers equipment transport across beach |                             |
+| 15:00 | Steelers equipment return to Treviglas    |                             |
+| 16:00 | **Elle & Luke**                           | Acoustic duo                |
+| 17:00 | **Trevolution**                           | Funk, reggae, 90s rave, EDM |
+| 18:00 | **The Strutts**                           | Pop-disco-rock party band   |
+| 20:00 | Finish                                    |                             |
+| 20:45 | Pack down PA                              |                             |
 
 ---
 
@@ -137,17 +143,17 @@ Live rockaoke with Shorefire as house band.
 **Evening 18:00-20:00:** Jenny, Ava, Sara, Isla, Renata
 **Lead:** Jenny - Alan is away from midday
 
-| Time  | Activity                                                 |
-| :---- | :------------------------------------------------------- |
-| 09:00 | Transport PA across the dunes                            |
-| 10:30 | Return PA system to Redruth                              |
-| 12:00 | Transport silent disco gear across the beach             |
-| 16:00 | Silent disco set-up - transmitters, channels, headphones |
-| 17:30 | Headphone issue desk opens                               |
-| 18:00 | **Silent Disco** - channel DJs on                        |
-| 19:45 | Headphone return begins                                  |
-| 20:00 | Finish                                                   |
-| 20:15 | Headphone count and reconcile against issue log          |
+| Time  | Activity                                                                  |
+| :---- | :------------------------------------------------------------------------ |
+| 09:00 | Transport PA across the dunes                                             |
+| 10:30 | Return PA system to Redruth                                               |
+| 12:00 | Transport silent disco gear across the beach                              |
+| 16:00 | Silent disco set-up - transmitters, channels, headphones, restricted area |
+| 17:30 | Headphone issue desk opens                                                |
+| 18:00 | **Silent Disco** - channel DJs on                                         |
+| 19:45 | Headphone return begins                                                   |
+| 20:00 | Finish                                                                    |
+| 20:15 | Headphone count and rescue                                                |
 
 ---
 
