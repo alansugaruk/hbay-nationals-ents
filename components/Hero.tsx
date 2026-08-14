@@ -8,7 +8,7 @@ export default function Hero() {
             "url('/hbay-evening.png')",
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-[#0a1628]/70 to-[#0a1628]/30" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-[#0a1628]/40 to-[#0a1628]/10" />
 
       <div className="relative z-10 w-full px-5 pb-12 pt-8 max-w-2xl mx-auto text-center [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">
         <p className="text-cyan-400 text-xl font-semibold tracking-widest uppercase mb-3">
