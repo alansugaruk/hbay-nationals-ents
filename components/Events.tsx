@@ -238,6 +238,25 @@ export default function Events() {
                   </div>
                 )}
 
+                {/* Open Decks equipment info */}
+                {(e.slug === "open-decks" || e.slug === "open-decks-tue") && (
+                  <div className="mt-3 text-slate-300 text-base leading-relaxed">
+                    <p className="font-semibold text-slate-200">
+                      DJ equipment available to use:
+                    </p>
+                    <ul className="list-disc list-inside mt-1">
+                      <li>DDJ-FLX4 Controller</li>
+                      <li>Laptop running Rekordbox</li>
+                      <li>Spotify with internet access</li>
+                      <li>Headphones</li>
+                    </ul>
+                    <p className="mt-2">
+                      Ask for Alan at the bar or to anyone wearing a yellow
+                      t-shirt, or register your interest through this site.
+                    </p>
+                  </div>
+                )}
+
                 {/* Bandcamp link */}
                 {e.bandcamp && (
                   <a
